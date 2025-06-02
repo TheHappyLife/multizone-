@@ -1,0 +1,18 @@
+{
+  "name": "multizone",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run dev:home\" \"npm run dev:main\"",
+    "dev:home": "cd home-zone && npm run dev",
+    "dev:main": "cd main-zone && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
